@@ -1,7 +1,8 @@
 ﻿using Xamarin.Forms;
-using InventoryApp.ViewModels;
+using MobileDeviceProgrammingFinal.ViewModels;
+using System;
 
-namespace InventoryApp.Views
+namespace MobileDeviceProgrammingFinal.Views
 {
     public partial class MainPage : ContentPage
     {
@@ -10,5 +11,7 @@ namespace InventoryApp.Views
             InitializeComponent();
             BindingContext = new InventoryViewModel();
         }
+
+        
     }
 }

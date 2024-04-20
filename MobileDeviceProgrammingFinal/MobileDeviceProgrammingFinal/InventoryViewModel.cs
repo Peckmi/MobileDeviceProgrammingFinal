@@ -1,4 +1,4 @@
-﻿using InventoryApp.Models;
+﻿using MobileDeviceProgrammingFinal.Models;
 using System.Collections.ObjectModel;
 using System.Linq;
 using Xamarin.Forms;
@@ -6,7 +6,7 @@ using Xamarin.Essentials;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace InventoryApp.ViewModels
+namespace MobileDeviceProgrammingFinal.ViewModels
 {
     public class InventoryViewModel : BindableObject
     {

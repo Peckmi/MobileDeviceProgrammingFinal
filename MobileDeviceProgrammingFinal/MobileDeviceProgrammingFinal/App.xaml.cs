@@ -1,10 +1,10 @@
-﻿using InventoryApp.Views;
+﻿using MobileDeviceProgrammingFinal.Views;
 using MobileDeviceProgrammingFinal;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace InventoryApp
+namespace MobileDeviceProgrammingFinal
 {
     public partial class App : Application
     {
@@ -15,10 +15,7 @@ namespace InventoryApp
             MainPage = new NavigationPage(new MainPage());
         }
 
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
-        }
+        
 
         protected override void OnStart()
         {

@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 
-namespace InventoryApp.Models
+namespace MobileDeviceProgrammingFinal.Models
 {
     public class InventoryItem : BindableObject
     {
