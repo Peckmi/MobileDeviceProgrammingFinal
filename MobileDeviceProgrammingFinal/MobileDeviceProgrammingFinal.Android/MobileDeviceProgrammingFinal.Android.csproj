@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -88,10 +88,10 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MobileDeviceProgrammingFinal\MobileDeviceProgrammingFinal.csproj">
-      <Project>{AEB25BE9-E2E6-4729-861C-90F8172EF0EF}</Project>
-      <Name>MobileDeviceProgrammingFinal</Name>
+    <ProjectReference Include="..\MobileDeviceProgrammingFinal\MobileFinal.csproj">
+      <Project>{CD3227BF-7B78-4B40-9776-1093390C4183}</Project>
+      <Name>MobileFinal</Name>
     </ProjectReference>
   </ItemGroup>
- <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

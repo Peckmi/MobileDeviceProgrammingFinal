@@ -1,24 +1,25 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MobileDeviceProgrammingFinal.MainPage">
-
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+             x:Class="InventoryApp.Views.MainPage"
+             Title="Inventory">
+    <StackLayout Padding="10">
+        <ListView x:Name="ItemsListView" HasUnevenRows="True" ItemsSource="{Binding Items}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame Padding="10" Margin="5" HasShadow="True">
+                            <StackLayout Orientation="Horizontal" Padding="10">
+                                <Label Text="{Binding Name}" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
+                                <Label Text="{Binding Price, StringFormat='Price: {0:C}'}" VerticalOptions="Center" HorizontalOptions="Start"/>
+                                <Label Text="{Binding QuantityToOrder, StringFormat='Order: {0}'}" VerticalOptions="Center" HorizontalOptions="Start"/>
+                                <Button Command="{Binding IncreaseOrderCommand}" CommandParameter="{Binding .}" Text="+" />
+                                <Button Command="{Binding DecreaseOrderCommand}" CommandParameter="{Binding .}" Text="-" />
+                            </StackLayout>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="Send Order" Command="{Binding SendOrderCommand}" />
     </StackLayout>
-
 </ContentPage>

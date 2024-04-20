@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileDeviceProgrammingFina
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileDeviceProgrammingFinal.iOS", "MobileDeviceProgrammingFinal\MobileDeviceProgrammingFinal.iOS\MobileDeviceProgrammingFinal.iOS.csproj", "{10AF8F5D-5084-4EB6-97F5-917365B44E66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileDeviceProgrammingFinal", "MobileDeviceProgrammingFinal\MobileDeviceProgrammingFinal\MobileDeviceProgrammingFinal.csproj", "{CD3227BF-7B78-4B40-9776-1093390C4183}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MobileFinal", "MobileDeviceProgrammingFinal\MobileDeviceProgrammingFinal\MobileFinal.csproj", "{CD3227BF-7B78-4B40-9776-1093390C4183}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
